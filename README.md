@@ -98,6 +98,8 @@ pause
 > 用 `set path` 查看 Python 安装路径，然后使用完整路径：  
 > ```bash
 > "D:\Program Files\Python313\python.exe" UPDATE_HTML_AM.py
+> "D:\Program Files\Python313\python.exe" UPDATE_HTML_HK.py
+> pause
 > ```
 
 
