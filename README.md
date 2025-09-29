@@ -19,8 +19,7 @@ web/
 解压后，把 `UPDATE_HTML.py` 和 `Modify_HTML` 文件夹拷贝到网站（`main.html`、`bbs` 文件夹）同一层目录。
 双击 `UPDATE_HTML_ALL.bat` 即可运行。
 
-> **⚠️ 重要注意事项**
-> 
+ 
 > | 事项 | 说明 | 操作 |
 > |------|------|------|
 > | **Modify_HTML 文件夹** | 核心文件 | 🚫 禁止修改任何文件 |
@@ -61,8 +60,8 @@ web/
 
 -----------------------
 
-
-以下为需要注意的几个地方：
+<br/>
+**⚠️ 重要注意事项**
 > UPDATE_HTML_ALL.bat 双击运行程序 
 ```
 REM AM, Comment out with ::
