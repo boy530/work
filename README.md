@@ -1,5 +1,34 @@
-以下为代码需要注意的几个地方：
+文件结构：
+400777\
+├── UPDATE_HTML.py                 # * 主入口文件，只需要运行它就好 *
+├── main.html                      # 在 Modify_HTML\config.py 修改路径
+├── am_kaijian_data.json           # 澳门区开奖记录，按实际开奖修改
+├── xg_kaijian_data.json           # 香港区开奖记录，按实际开奖修改
+├── bbs1\                          # BBS1页面文件夹
+├── bbs\                           # BBS页面文件夹
+├── css\
+├── img\
+├── Logs\                          # 日志文件夹，可以删除也可以保留查看历史日志
+└── Modify_HTML\                   # * 除了config.py配置，不要动其它任何文件 *
+    └── config.py                  # 配置文件 修改test.html 为 main.html
 
+1. 解压后，把"UPDATE_HTML.py"  "Modify_HTML文件夹"拷贝到网站(main.html bbs/ img/)同一层目录。运行UPDATE_HTML.py即可。
+2. Modify_HTML文件夹下任何文件均禁止修改!!
+3. Logs文件夹可以删除或保留，每次运行会自动创建。
+
+-----------------------
+需要安装 python 3.13来运行脚本 
+https://www.python.org/ftp/python/3.13.6/python-3.13.6-amd64.exe
+
+检查已安装版本，星号 * 表示当前默认版本
+cmd命令窗口运行： py -0
+
+如果有多个版本，且星号 *不在3.13这一行，需要要 C:\Windows 下创建 py.ini，内容：
+[defaults]
+python=3.13
+
+
+以下为代码需要注意的几个地方：
 ```
 UPDATE_HTML_ALL.bat 
 REM AM, Comment out with ::
