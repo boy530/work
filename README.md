@@ -1,9 +1,14 @@
 以下为代码需要注意的几个地方：
 
 ```
-Modify_HTML_vAll.py 
-subprocess.run(["python", "Modify_HTML_HK_v5_1ok.py"]) #香港
-subprocess.run(["python", "Modify_HTML_v5_9ok.py"])    #澳门
+UPDATE_HTML_ALL.bat 
+REM AM, Comment out with ::
+python UPDATE_HTML_AM.py
+
+REM HK, Comment out with :: 
+python UPDATE_HTML_HK.py
+
+pause
 ```
 
 > 在这里修改好对应的版本号，可以只运行这一个文件，就会把香港和澳门的python文件都运行
@@ -51,11 +56,19 @@ modify_html('test.html', result[0], result[1], result[2])
 
 
 **删除规则：**
+1. 如果仅有一期，且开错，删除
+ 
+对于平特功能块：
+2. 如果当期开错，且跟前一期不连续，删除所有期
+3. 最新的两期为错，且所有错的期数大于对的期数，删除所有期
+4. 最新的两期为错，且所有错的期数小于对的期数，删除所有错的期数
 
-1. 最新期开错，并且<li>跟上一期的<li>不连贯时删除
-2. 最新期开错，且最新期为最小期数时删除
-3. 最新期开错，且存在的<li>中有缺失时，删除
-4. 此外，
+对于非平特功能块：
+5. 最新的两期为错，删除所有错的期数
+6. 最新期开错，最近两期不连续，删除最新期
+7. 最新期开错，且之前的期数中有缺失期数，删除最新期
+
+8. 此外，
    ①肖①码，当七肖未中时，删除
    一肖一码，当九肖未中时，删除
    澳门信封, 当七肖未中时，删除
