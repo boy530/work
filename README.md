@@ -40,17 +40,21 @@ python UPDATE_HTML_HK.py
 pause
 ```
 
-> 需要安装 python 3.13来运行脚本 
+> 需要安装 python 3.13来运行脚本
+> 
 > https://www.python.org/ftp/python/3.13.6/python-3.13.6-amd64.exe
 > 
 > 检查已安装版本，星号 * 表示当前默认版本
+> 
 > cmd命令窗口运行： py -0
 > 
 > 如果有多个版本，且星号 *不在3.13这一行，需要在 C:\Windows 下创建 py.ini，内容：
+> 
 > [defaults]
 > python=3.13
 > 
 > 或者，用 set path 查看 ptyhon安装路径。然后写上完整路径如：
+> 
 > "D:\Program Files\Python313\python.exe" UPDATE_HTML_AM.py    #来指定python的版本
 
 
