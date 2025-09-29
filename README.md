@@ -1,7 +1,8 @@
 文件结构：
 web\
-├── UPDATE_HTML.py                 # * 主入口文件，只需要运行它就好 *
-├── main.html                      # 在 Modify_HTML\config.py 修改路径
+├── UPDATE_HTML_ALL.bat            # 双击运行程序 
+├── UPDATE_HTML.py                 # 主入口
+├── main.html                      # 主页
 ├── am_kaijian_data.json           # 澳门区开奖记录，按实际开奖修改
 ├── xg_kaijian_data.json           # 香港区开奖记录，按实际开奖修改
 ├── bbs1\                          # BBS1页面文件夹
