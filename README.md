@@ -63,27 +63,6 @@ block_configs = [
 > block_configs = [] 这里控制每一个功能块的执行，如果不想让某个功能块运行，可以在前面加 #进行注释
 
 
-
-```
-if updated:
-    f.seek(0)
-    f.write(str(soup))
-    f.truncate()
-    logging.info("HTML文件修改完成！"+"\n"*3)
-```
-
-> 这里控制是否最终写入html文件，这里的三个f.前加#的话，可以看日志，是否是想要的结果。主要用于调试
-
-
-
-```
-modify_html('test.html', result[0], result[1], result[2])
-```
-
-> 这里修改 test.html 文件名，为最终要执行修改的的html文件
-
-
-
 **删除规则：**
 1. 如果仅有一期，且开错，删除
  
