@@ -1,19 +1,30 @@
-文件结构：
-> web\
-> ├── UPDATE_HTML_ALL.bat            # 双击运行程序 
-> ├── UPDATE_HTML.py                 # 主入口
-> ├── main.html                      # 主页
-> ├── am_kaijian_data.json           # 澳门区开奖记录，按实际开奖修改
-> ├── xg_kaijian_data.json           # 香港区开奖记录，按实际开奖修改
-> ├── bbs1\                          # BBS1页面文件夹
-> ├── bbs\                           # BBS页面文件夹
-> ├── Logs\                          # 日志文件夹，可以删除也可以保留查看历史日志
-> └── Modify_HTML\                   # 核心文件夹，禁止修改
->     └── config.py                  # 配置文件 
->
-> 1. 解压后，把"UPDATE_HTML.py"  "Modify_HTML文件夹" 拷贝到网站(main.html bbs文件夹 )同一层目录。双击UPDATE_HTML_ALL.bat 即可。
-> 2. Modify_HTML文件夹下任何文件均禁止修改!!
-> 3. Logs文件夹可以删除或保留，每次运行会自动创建。
+## 📁 文件结构
+
+```
+web/
+├── UPDATE_HTML_ALL.bat           # 双击运行程序 
+├── UPDATE_HTML.py                # 主入口
+├── main.html                     # 主页
+├── am_kaijian_data.json          # 澳门区开奖记录
+├── xg_kaijian_data.json          # 香港区开奖记录
+├── bbs1/                         # BBS1页面文件夹
+├── bbs/                          # BBS页面文件夹
+├── Logs/                         # 日志文件夹
+└── Modify_HTML/                  # 核心文件夹（禁止修改）
+    └── config.py                 # 配置文件
+```
+
+## 🚀 快速开始
+
+### 步骤
+解压后，把 `UPDATE_HTML.py` 和 `Modify_HTML` 文件夹拷贝到网站（`main.html`、`bbs` 文件夹）同一层目录。
+双击 `UPDATE_HTML_ALL.bat` 即可运行。
+
+## ⚠️ 注意事项
+
+- **Modify_HTML 文件夹**：任何文件均禁止修改！
+- **Logs 文件夹**：可以删除或保留，每次运行会自动创建
+- **开奖数据**：请按实际开奖修改对应的 JSON 文件
 
 -----------------------
 
