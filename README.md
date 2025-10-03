@@ -66,7 +66,8 @@ web/
 <br/>
 
 **⚠️ 重要注意事项**
-> UPDATE_HTML_ALL.bat 双击运行程序 
+> UPDATE_HTML_ALL.bat 双击运行程序  
+> 可以只运行香港或是澳门，如果要停止香港区的运行，只需要 `:: python UPDATE_HTML_HK.py` 前面加上 :: 即可
 ```
 REM AM, Comment out with ::
 python UPDATE_HTML_AM.py
