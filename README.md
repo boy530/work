@@ -105,6 +105,10 @@ pause
 > pause
 > ```
 
+<br/> 
+
+![示例图片](https://github.com/boy530/work/blob/main/photo_2025-10-04_22-10-30.jpg)  
+> 如图，画框的这四个地方，是用来定位功能块位置的，不能变动。如需要改动，请提前告知我。
 
 
 <br/>  
