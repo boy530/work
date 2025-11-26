@@ -1,8 +1,10 @@
 ## 📁 文件结构
 ```
 web/
-├── UPDATE_HTML_ALL.bat           # 双击运行程序 
-├── UPDATE_HTML.py                # 主入口
+├── UPDATE_HTML_澳门.bat          # 双击运行澳门程序 
+├── UPDATE_HTML_香港.bat          # 双击运行香港程序
+├── UPDATE_HTML_AM.py             # 主程序
+├── UPDATE_HTML_HK.py             # 主程序
 ├── main.html                     # 主页
 ├── am_kaijian_data.json          # 澳门开奖记录
 ├── xg_kaijian_data.json          # 香港开奖记录
@@ -16,13 +18,13 @@ web/
 ## 🚀 快速开始
 
 ### 步骤
-解压后，把 `UPDATE_HTML.py` 和 `Modify_HTML` 文件夹拷贝到网站（`main.html`、`bbs` 文件夹）同一层目录。  
+解压后，把 `UPDATE_HTML...` 和 `Modify_HTML` 文件夹拷贝到网站（`main.html`、`bbs` 文件夹）同一层目录。  
 双击 `UPDATE_HTML_ALL.bat` 即可运行。
 
  
 > | 事项 | 说明 | 操作 |
 > |------|------|------|
-> | **UPDATE_HTML_ALL.bat** | 脚本文件 | 📍 双击运行程序 |
+> | **UPDATE_HTML_AM.bat** | 脚本文件 | 📍 双击运行程序 |
 > | **Modify_HTML 文件夹** | 核心文件 | 🚫 禁止修改任何文件 |
 > | **Logs 文件夹** | 日志文件 | 📁 可删除，运行时会自动创建 |
 > | **开奖数据 kaijian_data.json** | 数据文件 | 📊 按实际开奖修改，JSON 标准格式 |
@@ -66,15 +68,11 @@ web/
 <br/>
 
 **⚠️ 重要注意事项**
-> UPDATE_HTML_ALL.bat 双击运行程序  
-> 可以只运行香港或是澳门，如果要停止香港区的运行，只需要 `:: python UPDATE_HTML_HK.py` 前面加上 :: 即可
+> UPDATE_HTML_AM.bat 双击运行程序
+> UPDATE_HTML_HK.bat 双击运行程序  
 ```
 REM AM, Comment out with ::
 python UPDATE_HTML_AM.py
-
-REM HK, Comment out with :: 
-python UPDATE_HTML_HK.py
-
 pause
 ```
 
@@ -126,12 +124,13 @@ B、【平特功能块】：
 4. 第一期为最小期开对，第二期开错，删除所有的期数
 
 C、【中特功能块】：
-1. 中特8肖9肖  1/3，所有期数都删
-2. 中特5肖6肖 50/50，所有期数都删
-3. 4肖 2/3，所有期数都删
-4. 最新的两期为错，删除所有错的期数
+1. 中特8肖9肖  1/3，所有期数都删 ('IS_ZT8')
+2. 中特5肖6肖 50/50，所有期数都删 ('IS_ZT5' )
+3. 4肖 2/3，所有期数都删 ('IS_ZT4')
+4. 最新的两期为错，删除所有错的期数 ('IS_ZT2')
 5. 最新期开错，最近两期不连续，删除最新期
 6. 最新期开错，且之前的期数中有缺失期数，删除最新期
+7. （部分功能块）只要当期开错，删除当期 (_1)
 
 D、【普通功能块】：
 1. 最新的两期为错，删除所有错的期数
