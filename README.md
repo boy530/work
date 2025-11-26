@@ -68,7 +68,7 @@ web/
 <br/>
 
 **⚠️ 重要注意事项**
-> UPDATE_HTML_AM.bat 双击运行程序
+> UPDATE_HTML_AM.bat 双击运行程序<br>
 > UPDATE_HTML_HK.bat 双击运行程序  
 ```
 REM AM, Comment out with ::
