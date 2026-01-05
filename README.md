@@ -31,38 +31,6 @@ web/
 
 <br/>
 
-### 🐬 json文件标准格式：
-```json
-{
-  "ABCrecords": [
-    {
-      "period": "001期",
-      "zodiacs": [
-        {"name": "n1", "number": "01"},
-        {"name": "n2", "number": "02"},
-        {"name": "n3", "number": "03"}
-      ]
-    },
-    {
-      "period": "002期",
-      "zodiacs": [
-        {"name": "n1", "number": "01"},
-        {"name": "n2", "number": "02"},
-        {"name": "n3", "number": "03"}
-      ]
-    },
-    {
-      "period": "003期",
-      "zodiacs": [
-        {"name": "n1", "number": "01"},
-        {"name": "n2", "number": "02"},
-        {"name": "n3", "number": "03"}
-      ]
-    }
-  ]
-}
-```
-
 -----------------------
 
 <br/>
@@ -189,4 +157,34 @@ abc = {
 def get_abc()
 ```
 
-
+### 🐬 json文件标准格式：
+```json
+{
+  "ABCrecords": [
+    {
+      "period": "001期",
+      "zodiacs": [
+        {"name": "n1", "number": "01"},
+        {"name": "n2", "number": "02"},
+        {"name": "n3", "number": "03"}
+      ]
+    },
+    {
+      "period": "002期",
+      "zodiacs": [
+        {"name": "n1", "number": "01"},
+        {"name": "n2", "number": "02"},
+        {"name": "n3", "number": "03"}
+      ]
+    },
+    {
+      "period": "003期",
+      "zodiacs": [
+        {"name": "n1", "number": "01"},
+        {"name": "n2", "number": "02"},
+        {"name": "n3", "number": "03"}
+      ]
+    }
+  ]
+}
+```
